@@ -566,10 +566,6 @@ img {
     #header-top {
         margin-top: 0;
     }
-
-    .tag {
-        /* margin-left: 0px; */
-    }
 }
 
 @media only screen and (min-width: 425px) {
