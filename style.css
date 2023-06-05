@@ -8,6 +8,7 @@ body, html {
     color: #ffffff; 
     background-color: #000000;
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
 }
 
 .section-heading-text {
@@ -35,11 +36,10 @@ h5 {
 p {
     margin: 0;
     font-weight: 300;
-    font-size: 20px;
+    
 }
 
 a {
-    font-size: 20px;
     font-weight: 300;
     color: #ffffff;
     transition: 0.1s;
@@ -124,6 +124,10 @@ img {
     margin: 140px 0 85px 0;
 }
 
+#header a {
+    font-size: 20px;
+}
+
 #home {
     margin: 0 80px 10px 0;
 }
@@ -151,9 +155,33 @@ img {
 #about-big-text {
     max-width: 770px;
     font-size: 37px;
-    line-height: 53px;
+    line-height: 50px;
     font-weight: 300;
     margin-bottom: 15px;
+}
+
+#CTA {
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    /* display: flex;
+    align-items: baseline; */
+    margin-top: 25px;
+}
+
+#CTA p {
+    line-height: 20px;
+}
+
+#about-container a:hover {
+    text-decoration: underline;
+}
+
+#circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: rgb(0, 206, 69);
 }
 
 #about-para {
@@ -175,24 +203,32 @@ img {
 }
 
 #sub-heading {
-    margin-bottom: 30px;
+    margin: 30px 0 50px 0;
+    border-bottom: 1px solid #fff;
+    border-width: thin;
+    padding-bottom: 10px;
+
 }
 
 #sub-heading p {
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 2px;
+    
 }
 
 #work-container h1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 30px 0 10px 0;
 }
 
 #work-container p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     max-width: 550px;
     line-height: 30px;
@@ -203,10 +239,20 @@ img {
     margin-top: 10px;
     color: #ffffff;
     transition: 0.5s;
+    font-size: 18px;
 }
 
 #work-container a:hover {
     text-decoration: underline;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.123);
+    padding: 7px;
+    border-radius: 25px;
+    margin: 0 0 0 10px;
 }
 
 .work-item {
@@ -520,6 +566,10 @@ img {
     #header-top {
         margin-top: 0;
     }
+
+    .tag {
+        /* margin-left: 0px; */
+    }
 }
 
 @media only screen and (min-width: 425px) {
@@ -631,7 +681,7 @@ img {
     }
 
     #work-container p {
-        line-height: 32px;
+        line-height: 29px;
     }
 }
 /* Media Queries End */
